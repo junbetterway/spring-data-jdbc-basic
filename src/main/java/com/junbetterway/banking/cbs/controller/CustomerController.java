@@ -16,7 +16,7 @@ import com.junbetterway.banking.cbs.service.CustomerService;
 import lombok.RequiredArgsConstructor;
 
 /**
- * Controller APIs for {@link Customer}
+ * Controller APIs for {@link Customer}.
  *
  * @author junbetterway
  */
