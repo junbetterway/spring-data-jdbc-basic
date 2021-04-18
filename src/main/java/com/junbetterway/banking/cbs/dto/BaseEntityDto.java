@@ -1,6 +1,6 @@
-package com.junbetterway.banking.cbs.model;
+package com.junbetterway.banking.cbs.dto;
 
-import org.springframework.data.annotation.Id;
+import com.junbetterway.banking.cbs.model.BaseEntity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 /**
- * Abstract class to represent the base entity to be persisted into database.
+ * DTO class for {@link BaseEntity}.
  *
  * @author junbetterway
  */
@@ -18,9 +18,8 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @SuperBuilder
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public abstract class Metadata {
+public abstract class BaseEntityDto {
 
-  @Id
   @EqualsAndHashCode.Include
   private Long id;
 
